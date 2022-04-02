@@ -1,0 +1,9 @@
+:Install Docker from the link below:
+  #https://docs.docker.com/get-docker/
+:Run docker in the CLI using commmand:
+  #sudo service docker start or docker or sudo docker
+  if it show connection error with daemon then use this link to solve the problem:
+   #https://stackoverflow.com/questions/21871479/docker-cant-connect-to-docker-daemon
+:Now, simply run type in your CLI:
+  (sudo) docker pull the link of the dockerfile in this Repo.
+  
