@@ -12,7 +12,7 @@ try:
 	for imgTag in list_imgs:
 		# print(imgTag)
 		imgLink = imgTag.get('src')
-		print(imgLink)
+		#print(imgLink)
 		extension = imgLink[imgLink.rindex('.'):]
 		fileN = str(c) + extension
 		if(imgLink.startswith('https')):
@@ -20,7 +20,7 @@ try:
 			with open(fileN, 'wb') as img:
 				img.write(imgRep.content)
 			c += 1
-		elif(imgLink.startswith('http')):
+		elif(imgLink.startswith('http:')):
 			print('Not Secure Site')
 			inpu = (input('Do U insist, y or n ')).lower()
 			if(inpu == 'y'):
